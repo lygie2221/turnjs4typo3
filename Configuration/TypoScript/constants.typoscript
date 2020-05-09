@@ -1,0 +1,15 @@
+
+plugin.tx_turnjs4typo3_turnjs4typo3 {
+    view {
+        # cat=plugin.tx_turnjs4typo3_turnjs4typo3/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:turnjs4typo3/Resources/Private/Templates/
+        # cat=plugin.tx_turnjs4typo3_turnjs4typo3/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:turnjs4typo3/Resources/Private/Partials/
+        # cat=plugin.tx_turnjs4typo3_turnjs4typo3/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:turnjs4typo3/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_turnjs4typo3_turnjs4typo3//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

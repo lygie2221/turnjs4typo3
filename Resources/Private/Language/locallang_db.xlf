@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-09T10:45:39Z" product-name="turnjs4typo3">
+		<header/>
+		<body>
+			<trans-unit id="tx_turnjs4typo3_domain_model_document">
+				<source>Document</source>
+			</trans-unit>
+			<trans-unit id="tx_turnjs4typo3_domain_model_document.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_turnjs4typo3_domain_model_document.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_turnjs4typo3_turnjs4typo3.name">
+				<source>TurnJS4Typo3</source>
+			</trans-unit>
+			<trans-unit id="tx_turnjs4typo3_turnjs4typo3.description">
+				<source>Displays document list or documents</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
