@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8e68e151-7895-4bc4-9a08-1bc0582dffb9" name="develop_gruene" url="http://gruene-kg.de">
+        <fileTransfer host="gruene-kg.de" port="10022" privateKey="$USER_HOME$/ssh_arbeit/id_rsa" rootFolder="/www/develop.gruene-kg.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="10022" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

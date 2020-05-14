@@ -1,23 +1,26 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-	<f:layout name="Default" />
 
-	This Template is responsible for displaying a single view for a domain object
 
-	If you modify this template, do not forget to change the overwrite settings
-	in /Configuration/ExtensionBuilder/settings.yaml:
-	  Resources:
-		Private:
-		  Templates:
-			Show.html: keep
 
-	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
-	<f:section name="content">
-		<h1>Single View for Document</h1>
 
-		<f:flashMessages />
-		<f:render partial="Document/Properties" arguments="{document:document}" />
-		<f:link.action action="list">Back to list</f:link.action><br />
-		<f:link.action action="new">New Document</f:link.action>
-	</f:section>
+
+<div id="flipbook">
+
+    <f:for each="{document.images}" as="pic">
+
+        <div><f:image src="{pic.originalResource.publicUrl}" alt="{pic.originalResource.alternative}" title="{pic.originalResource.title}" ></f:image></div>
+
+    </f:for>
+
+
+</div>
+
+<hr/> Blättern:
+<button id="prevBtn">zurück</button>
+<button id="nextBtn">weiter</button>
+
+<script src="{f:uri.resource(path: 'js/turnjs4typo3.js')}"></script>
+
+
 </html>

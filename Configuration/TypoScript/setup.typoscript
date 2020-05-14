@@ -57,3 +57,7 @@ plugin.tx_turnjs4typo3._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+
+page.includeJSFooter.tx_turnjs4typo3_turnjs4typo3_1 = EXT:turnjs4typo3/Resources/Public/js/libs/turn.min.js
+page.includeJSFooter.tx_turnjs4typo3_turnjs4typo3_2 = EXT:turnjs4typo3/Resources/Public/js/libs/zoom.min.js

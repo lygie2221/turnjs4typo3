@@ -33,8 +33,32 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function listAction()
     {
+     //   $documents = $this->documentRepository->findAll();
+      //  $this->view->assign('documents', $documents);
+
+
+        $pidList = $this->configurationManager->getConfiguration(
+            \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK
+        )['persistence']['storagePid'];
+
+
+        if(empty($pidList)){
+
+
+            $pid=$GLOBALS['TSFE']->id;
+
+            $objectManager =
+                \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Object\\ObjectManager');
+            $defaultQuerySettings =
+                $objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
+            $defaultQuerySettings->setStoragePageIds([$pid]);
+
+            $this->documentRepository->setDefaultQuerySettings($defaultQuerySettings);
+        }
+
         $documents = $this->documentRepository->findAll();
         $this->view->assign('documents', $documents);
+
     }
 
     /**

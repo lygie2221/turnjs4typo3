@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document',
-        'label' => 'images',
+        'label' => 'name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -20,10 +20,10 @@ return [
         'iconfile' => 'EXT:turnjs4typo3/Resources/Public/Icons/tx_turnjs4typo3_domain_model_document.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, images, settings',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, images, settings',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, images, settings, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, images, settings, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -115,7 +115,15 @@ return [
                 ]
             ],
         ],
-
+        'name' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.name',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
         'images' => [
             'exclude' => true,
             'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.images',
@@ -157,7 +165,7 @@ return [
                             --palette--;;filePalette'
                         ]
                     ],
-                    'maxitems' => 1
+                    'maxitems' => 20
                 ],
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),

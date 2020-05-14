@@ -6,6 +6,9 @@
 			<trans-unit id="tx_turnjs4typo3_domain_model_document">
 				<source>Document</source>
 			</trans-unit>
+            <trans-unit id="tx_turnjs4typo3_domain_model_document.name">
+                <source>Name</source>
+            </trans-unit>
 			<trans-unit id="tx_turnjs4typo3_domain_model_document.images">
 				<source>Images</source>
 			</trans-unit>
