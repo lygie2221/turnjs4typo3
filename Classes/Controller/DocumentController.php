@@ -57,6 +57,12 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         }
 
         $documents = $this->documentRepository->findAll();
+
+        if(array_key_exists("display",$this->settings) && $this->settings["display"] > 0){
+            $this->view->assign('singlePid', $this->settings["display"]);
+        }
+
+
         $this->view->assign('documents', $documents);
 
     }

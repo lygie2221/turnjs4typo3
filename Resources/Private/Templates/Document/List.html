@@ -3,12 +3,36 @@
 
 <div class="row">
 	<f:for each="{documents}" as="document" iteration="counter">
-		<f:link.action
-				controller="Document"
-				action="show"
-				arguments="{document : document}">
-			<f:render partial="Document/ListElement" arguments="{_all}"/>
-		</f:link.action>
+
+		<f:if condition="singlePid">
+			<f:then>
+				<f:link.page
+						additionalParams="{
+							tx_turnjs4typo3_turnjs4typo3:{
+								controller: 'Document',
+								action: 'show',
+								document: '{document}'
+								}
+							}"
+						class="mainmenu"
+						pageUid="{singlePid}">
+					<f:render partial="Document/ListElement" arguments="{_all}"/>
+
+				</f:link.page>
+			</f:then>
+			<f:else>
+				<f:link.action
+						controller="Document"
+						action="show"
+						arguments="{document : document}">
+					<f:render partial="Document/ListElement" arguments="{_all}"/>
+				</f:link.action>
+			</f:else>
+		</f:if>
+
+
+
+
 	</f:for>
 
 </div>
