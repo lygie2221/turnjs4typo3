@@ -9,7 +9,9 @@
 
     <f:for each="{document.images}" as="pic">
 
-        <div><f:image src="{pic.originalResource.publicUrl}" alt="{pic.originalResource.alternative}" title="{pic.originalResource.title}" ></f:image></div>
+        <div>
+            <f:image src="{pic.originalResource.publicUrl}" alt="{pic.originalResource.alternative}" title="{pic.originalResource.title}" ></f:image>
+        </div>
 
     </f:for>
 
