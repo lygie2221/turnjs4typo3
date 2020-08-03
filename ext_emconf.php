@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'TurnJs4Typo3',
-    'description' => 'Manages Documents and displays them with rutnjs',
+    'description' => 'Manages Documents and displays them with turnJs',
     'category' => 'plugin',
     'author' => 'Tobias Eichelbrönner',
     'author_email' => 'newsletter@lygie.de',

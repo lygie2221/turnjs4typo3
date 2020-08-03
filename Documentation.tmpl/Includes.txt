@@ -36,5 +36,3 @@
 .. ---------
 
 .. By default, code blocks are php
-
-.. highlight:: php

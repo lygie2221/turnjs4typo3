@@ -39,7 +39,7 @@ TurnJs4Typo3
     turnjs4typo3
 
 :Version:
-    |release|
+    1.0.0
 
 :Language:
     en
