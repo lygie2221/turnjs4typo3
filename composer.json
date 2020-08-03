@@ -1,7 +1,7 @@
 {
     "name": "te/turnjs4typo3",
     "type": "typo3-cms-extension",
-    "description": "Manages Documents and displays them with rutnjs",
+    "description": "Manages Documents and displays them with turnjs",
     "authors": [
         {
             "name": "Tobias Eichelbr\u00f6nner",
@@ -10,7 +10,7 @@
     ],
     "version": "1.0.0",
     "require": {
-        "typo3/cms-core": "^9.5.17"
+        "typo3/cms-core": "^9.5.*"
     },
     "autoload": {
         "psr-4": {

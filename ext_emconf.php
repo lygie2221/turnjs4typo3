@@ -16,14 +16,14 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'plugin',
     'author' => 'Tobias Eichelbrönner',
     'author_email' => 'newsletter@lygie.de',
-    'state' => 'alpha',
+    'state' => 'beta',
     'uploadfolder' => 1,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-9.5.99',
+            'typo3' => '9.5.0-10.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
