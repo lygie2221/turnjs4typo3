@@ -8,9 +8,8 @@
             "role": "Developer"
         }
     ],
-    "version": "1.0.0",
     "require": {
-        "typo3/cms-core": "^9.5.*"
+        "typo3/cms-core": "^9.5 || ^10.4"
     },
     "autoload": {
         "psr-4": {
@@ -21,9 +20,5 @@
         "psr-4": {
             "Te\\Turnjs4typo3\\Tests\\": "Tests"
         }
-    },
-    "replace": {
-        "turnjs4typo3": "self.version",
-        "typo3-ter/turnjs4typo3": "self.version"
     }
 }
