@@ -22,4 +22,4 @@ TODO:
 
 * Add better documentation
 * Allow backend configuration of turnjs
-* Translation
+* Translation for frontend and backend
