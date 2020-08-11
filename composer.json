@@ -20,5 +20,8 @@
         "psr-4": {
             "Te\\Turnjs4typo3\\Tests\\": "Tests"
         }
+    },
+    "replace": {
+        "typo3-ter/turnjs4typo3": "self.version"
     }
 }
