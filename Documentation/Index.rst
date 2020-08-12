@@ -10,7 +10,6 @@ The frontend provides a list view of you documents and a single view displaying 
 Installation
 ============
 
-
 * Install the Extension
 * Add static typoscript
 * Use the List module to add one or more documents
