@@ -22,7 +22,7 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      * documentRepository
      * 
      * @var \Te\Turnjs4typo3\Domain\Repository\DocumentRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $documentRepository = null;
 

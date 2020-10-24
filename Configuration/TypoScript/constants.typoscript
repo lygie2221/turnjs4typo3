@@ -10,6 +10,6 @@ plugin.tx_turnjs4typo3_turnjs4typo3 {
     }
     persistence {
         # cat=plugin.tx_turnjs4typo3_turnjs4typo3//a; type=string; label=Default storage PID
-        storagePid =
+        storagePid >
     }
 }
