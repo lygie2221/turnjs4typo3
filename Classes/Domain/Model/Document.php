@@ -48,11 +48,110 @@ class Document extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $images = null;
 
     /**
-     * settings
-     * 
+     * name
+     *
+     * @var boolean
+     */
+    protected $autosize = true;
+
+    /**
+     * name
+     *
+     * @var boolean
+     */
+    protected $acceleration = true;
+
+    /**
+     * name
+     *
+     * @var boolean
+     */
+    protected $autocenter = false;
+
+    /**
+     * name
+     *
      * @var string
      */
-    protected $settings = '';
+    protected $direction = 'ltr';//select, lrt,rtl
+
+    /**
+     * name
+     *
+     * @var string
+     */
+    protected $display = '';//select, double,single
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $duration = 600;
+
+    /**
+     * name
+     *
+     * @var boolean
+     */
+    protected $gradients = true;
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $height = 0;
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $elevation = 0;
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $page = 1;
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $pages = 0;
+
+    /**
+     * name
+     *
+     * @var string
+     */
+    protected $turncorners = 'bl,br';//select bl,br or tl,tr or bl,tr
+
+    /**
+     * name
+     *
+     * @var string
+     */
+    protected $when = '';//function
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $width = 0;
+
+    /**
+     * name
+     *
+     * @var int
+     */
+    protected $zoom = 0;
+
 
     /**
      * @return string
@@ -69,7 +168,6 @@ class Document extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->name = $name;
     }
-
 
 
 
@@ -114,28 +212,249 @@ class Document extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function addImages(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
         $this->Images->attach($image);
     }
-    
 
     /**
-     * Returns the settings
-     * 
-     * @return string $settings
+     * @return bool
      */
-    public function getSettings()
+    public function isAutosize()
     {
-        return $this->settings;
+        return $this->autosize;
     }
 
     /**
-     * Sets the settings
-     * 
-     * @param string $settings
-     * @return void
+     * @param bool $autosize
      */
-    public function setSettings($settings)
+    public function setAutosize($autosize)
     {
-        $this->settings = $settings;
+        $this->autosize = $autosize;
     }
+
+
+    /**
+     * @return bool
+     */
+    public function isAcceleration()
+    {
+        return $this->acceleration;
+    }
+
+    /**
+     * @param bool $acceleration
+     */
+    public function setAcceleration($acceleration)
+    {
+        $this->acceleration = $acceleration;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAutocenter()
+    {
+        return $this->autocenter;
+    }
+
+    /**
+     * @param bool $autoCenter
+     */
+    public function setAutocenter($autocenter)
+    {
+        $this->autocenter = $autocenter;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDirection()
+    {
+        return $this->direction;
+    }
+
+    /**
+     * @param string $direction
+     */
+    public function setDirection($direction)
+    {
+        $this->direction = $direction;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDisplay()
+    {
+        return $this->display;
+    }
+
+    /**
+     * @param string $display
+     */
+    public function setDisplay($display)
+    {
+        $this->display = $display;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDuration()
+    {
+        return $this->duration;
+    }
+
+    /**
+     * @param int $duration
+     */
+    public function setDuration($duration)
+    {
+        $this->duration = $duration;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isGradients()
+    {
+        return $this->gradients;
+    }
+
+    /**
+     * @param bool $gradients
+     */
+    public function setGradients($gradients)
+    {
+        $this->gradients = $gradients;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHeight()
+    {
+        return $this->height;
+    }
+
+    /**
+     * @param int $height
+     */
+    public function setHeight($height)
+    {
+        $this->height = $height;
+    }
+
+    /**
+     * @return int
+     */
+    public function getElevation()
+    {
+        return $this->elevation;
+    }
+
+    /**
+     * @param int $elevation
+     */
+    public function setElevation($elevation)
+    {
+        $this->elevation = $elevation;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPage()
+    {
+        return $this->page;
+    }
+
+    /**
+     * @param int $page
+     */
+    public function setPage($page)
+    {
+        $this->page = $page;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPages()
+    {
+        return $this->pages;
+    }
+
+    /**
+     * @param int $pages
+     */
+    public function setPages($pages)
+    {
+        $this->pages = $pages;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTurncorners()
+    {
+        return $this->turnCorners;
+    }
+
+    /**
+     * @param string $turncorners
+     */
+    public function setTurncorners($turncorners)
+    {
+        $this->turncorners = $turncorners;
+    }
+
+    /**
+     * @return string
+     */
+    public function getWhen()
+    {
+        return $this->when;
+    }
+
+    /**
+     * @param string $when
+     */
+    public function setWhen($when)
+    {
+        $this->when = $when;
+    }
+
+    /**
+     * @return int
+     */
+    public function getWidth()
+    {
+        return $this->width;
+    }
+
+    /**
+     * @param int $width
+     */
+    public function setWidth($width)
+    {
+        $this->width = $width;
+    }
+
+    /**
+     * @return int
+     */
+    public function getZoom()
+    {
+        return $this->zoom;
+    }
+
+    /**
+     * @param int $zoom
+     */
+    public function setZoom($zoom)
+    {
+        $this->zoom = $zoom;
+    }
+
+
 
 
 }

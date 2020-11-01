@@ -2,9 +2,6 @@
 
 
 
-
-
-
 <div id="flipbook">
 
     <f:for each="{document.images}" as="pic">
@@ -22,6 +19,8 @@
 <button id="prevBtn">zurück</button>
 <button id="nextBtn">weiter</button>
 
+<script id="turnjs_autosize" type="application/json"><f:format.raw>{autosize}</f:format.raw></script>
+<script id="turnjs_setting" type="application/json"><f:format.raw>{settings}</f:format.raw></script>
 <script src="{f:uri.resource(path: 'js/turnjs4typo3.js')}"></script>
 
 

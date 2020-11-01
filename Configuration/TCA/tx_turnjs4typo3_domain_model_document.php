@@ -20,10 +20,10 @@ return [
         'iconfile' => 'EXT:turnjs4typo3/Resources/Public/Icons/tx_turnjs4typo3_domain_model_document.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, images, settings',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, images, autosize, acceleration, autocenter, direction, display, duration, gradients, height, elevation, page, pages, turncorners, when, width',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, images, settings, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, images, autosize, acceleration, autocenter, direction, display, duration, gradients, height, elevation, page, pages, turncorners, when, width, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -170,9 +170,157 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
         ],
-        'settings' => [
+        'autosize' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.settings',
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.autosize',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    '1' => [
+                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                    ]
+                ],
+                'default' => 1,
+            ]
+        ],
+        'acceleration' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.acceleration',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    '1' => [
+                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                    ]
+                ],
+                'default' => 1,
+            ]
+        ],
+        'autocenter' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.autoCenter',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    '1' => [
+                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                    ]
+                ],
+                'default' => 0,
+            ]
+        ],
+        'direction' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.direction',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['ltr', 'ltr'],
+                    ['rtl', 'rtl'],
+                ],
+                'size' => 1,
+                'maxitems' => 1,
+                'eval' => ''
+            ],
+        ],
+        'display' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.display',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['double', 'double'],
+                    ['single', 'single'],
+                ],
+                'size' => 1,
+                'maxitems' => 1,
+                'eval' => ''
+            ],
+        ],
+        'duration' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.duration',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 600,
+            ]
+        ],
+        'gradients' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.gradients',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    '1' => [
+                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                    ]
+                ],
+                'default' => 1,
+            ]
+        ],
+        'height' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.height',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 0,
+            ]
+        ],
+        'elevation' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.elevation',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 0,
+            ]
+        ],
+        'page' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.page',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 1,
+            ]
+        ],
+        'pages' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.pages',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 0,
+            ]
+        ],
+        'turncorners' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.turnCorners',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['bl;br', 'bl;br'],
+                    ['tl;tr', 'tl;tr'],
+                    ['bl;tr', 'bl;tr'],
+                ],
+                'size' => 1,
+                'maxitems' => 1,
+                'eval' => ''
+            ],
+        ],
+        'when' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.when',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -180,6 +328,25 @@ return [
                 'eval' => 'trim'
             ]
         ],
-    
+        'width' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.width',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 0,
+            ]
+        ],
+        'zoom' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:turnjs4typo3/Resources/Private/Language/locallang_db.xlf:tx_turnjs4typo3_domain_model_document.zoom',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int',
+                'default' => 0,
+            ]
+        ],
     ],
 ];

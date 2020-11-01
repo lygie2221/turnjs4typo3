@@ -67,6 +67,40 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     }
 
+    private function parseSetting($document){
+        $settings=[];
+        $keys=[
+            "acceleration",
+            "autoCenter",
+            "direction",
+            "display",
+            "duration",
+            "gradients",
+            "height",
+            "elevation",
+            "page",
+            "pages",
+            "turnCorners",
+            "when",
+            "width",
+            "zoom"
+        ];
+        foreach(array_values($keys) as $key){
+            $getter='get'.ucfirst(strtolower($key));
+            if(method_exists($document,$getter)) {
+                if($document->$getter()){
+                    $settings[$key] = str_replace(";",",",$document->$getter());
+                }
+            }
+            $getter='is'.ucfirst(strtolower($key));
+            if(method_exists($document,$getter)) {
+                $settings[$key] = $document->$getter();
+            }
+
+        }
+        return json_encode($settings);
+    }
+
     /**
      * action show
      * 
@@ -75,6 +109,8 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function showAction(\Te\Turnjs4typo3\Domain\Model\Document $document)
     {
+        $this->view->assign('autosize', json_encode($document->isAutosize()));
+        $this->view->assign('settings', $this->parseSetting($document));
         $this->view->assign('document', $document);
     }
 }
