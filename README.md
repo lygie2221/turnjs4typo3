@@ -14,7 +14,7 @@ Installation
 * Install the Extension
 * Add static typoscript
 ![Alt text](Documentation/pictures/static_ts.png?raw=true "Title")
-* Use the List module to add one or more documents
+* Use the List module to add one or more documents \
 ![Alt text](Documentation/pictures/record.png?raw=true "Title")
 * Add listview on any page
 ![Alt text](Documentation/pictures/list_view.png?raw=true "Title")
