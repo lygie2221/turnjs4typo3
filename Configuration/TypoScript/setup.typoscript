@@ -9,7 +9,8 @@ plugin.tx_turnjs4typo3_turnjs4typo3 {
         layoutRootPaths.1 = {$plugin.tx_turnjs4typo3_turnjs4typo3.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_turnjs4typo3_turnjs4typo3.persistence.storagePid}
+        #storagePid = {$plugin.tx_turnjs4typo3_turnjs4typo3.persistence.storagePid}
+        storagePid >
         #recursive = 1
     }
     features {
