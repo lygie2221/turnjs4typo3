@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="gruene-kg.de" id="588b969a-70a3-4dc1-b87c-061b9ecdee3e" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" username="root" />
+      <sshConfig host="gruene-kg.de" id="31b9572c-49f9-4d03-b449-12d9042d20c0" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" username="root" />
+      <sshConfig host="gruene-kg.de" id="c598166a-6270-4c95-b096-d7695bca732e" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="709bf871-8eb8-43c8-a0f2-0f18c5ec1e0a" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="e4bf0bda-9ccd-4e62-8447-a16919046f1e" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="66b99602-6707-4151-b2c5-eaccae36c391" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="affa5a38-caa0-4ebb-a744-02912f05170f" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="4ed3d1ae-8f69-46cb-a65c-25b4245b4ea2" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="0de30262-6b87-4ebb-90ff-3a626b84d96a" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="986ad76f-17a8-4f0c-b224-90dd341aec8b" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="0c376881-4c77-4b80-8c2b-052600c03347" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="f463931a-57e3-40f7-a515-323890483312" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="8c67fa72-4d0f-46c7-95c8-b918210a8a13" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="63164268-74e5-41eb-ac2e-69ebc3a90227" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="62949aa2-4ae3-4b7f-89cd-4ee558468e3d" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="49b0e063-948f-4080-9988-38182b471e73" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="19a637e6-a82e-42c3-98be-94d9604e2417" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="d63f4d29-e302-4351-ae62-fac84fd3459f" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="65e8dfcf-1101-4b52-bf53-52098744721b" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="7484154f-be21-4aa4-a13c-78f92b964b5f" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="11cf333b-58ff-4f3b-b007-c7b4543dfe40" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="ff7b41f6-917a-428c-b14a-9f67f778f049" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="ebc5c189-b716-456d-b298-6f81295c5b73" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="9742ebd9-3459-4534-bdeb-ceffa5f6998c" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="c0bdc43b-3d85-450a-aa9b-339e70b56206" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="8480b294-ddef-4c34-8ebe-b558ff20d923" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="594b6447-d3f1-4d0b-83cf-dd429666a68d" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="eb24377c-d8fa-4bb2-87ce-6c6863b8f69f" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="f7ee149a-a34b-4452-9654-dbd3b839eb5b" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="6108fe97-b07d-4d6f-9f83-74fe715365d9" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="89692fc9-4f96-4979-81a8-e2f97b41f0c5" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="c228d9eb-731b-4fab-9e48-3c0661944fa9" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="dcdcd405-f300-49ed-ba4d-f96adc83942a" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="e89637e8-80f8-4d5f-a23c-3034f3df8de6" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="4b8266cb-3578-4692-8427-da9a9c130953" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="648db53c-24c0-418b-8f99-22063eadfb91" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="4ed55166-cb97-46bf-9d77-9bea515d0360" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+      <sshConfig host="gruene-kg.de" id="1838eb9c-c355-40ae-b1cc-c37c2c3a912a" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="develop_gruene" nameFormat="CUSTOM" username="root" />
+      <sshConfig host="gruene-kg.de" id="4c8074cf-d9eb-4af4-b573-2e6dafd699d2" keyPath="$USER_HOME$/ssh_arbeit/id_rsa" port="10022" customName="gruene_kg" nameFormat="CUSTOM" />
+    </configs>
+  </component>
+</project>

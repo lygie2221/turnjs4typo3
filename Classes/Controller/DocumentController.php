@@ -42,7 +42,6 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         )['persistence']['storagePid'];
 
 
-
         if(empty($pidList)){
 
 
