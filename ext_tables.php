@@ -9,7 +9,7 @@ call_user_func(
 
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'Te.Turnjs4typo3',
+            'Turnjs4typo3',
             'Turnjs4typo3',
             'TurnJS4Typo3'
         );

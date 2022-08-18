@@ -2,6 +2,9 @@
 namespace Te\Turnjs4typo3\Controller;
 
 
+use Te\Turnjs4typo3\Domain\Model\Document;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+
 /***
  *
  * This file is part of the "TurnJs4Typo3" Extension for TYPO3 CMS.
@@ -15,8 +18,9 @@ namespace Te\Turnjs4typo3\Controller;
 /**
  * DocumentController
  */
-class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class DocumentController extends ActionController 	implements \TYPO3\CMS\Extbase\Mvc\Controller\ControllerInterface
 {
+
 
     /**
      * documentRepository
@@ -25,6 +29,14 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $documentRepository = null;
+
+    /**
+     * @param \Te\Turnjs4typo3\Domain\Repository\DocumentRepository $documentRepository
+     */
+    public function injectDocumentRepository(\Te\Turnjs4typo3\Domain\Repository\DocumentRepository $documentRepository)
+    {
+        $this->documentRepository = $documentRepository;
+    }
 
     /**
      * action list
@@ -105,10 +117,10 @@ class DocumentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action show
      * 
-     * @param \Te\Turnjs4typo3\Domain\Model\Document $document
+     * @param Document $document
      * @return void
      */
-    public function showAction(\Te\Turnjs4typo3\Domain\Model\Document $document)
+    public function showAction(Document $document = null)
     {
         $this->view->assign('autosize', json_encode($document->isAutosize()));
         $this->view->assign('settings', $this->parseSetting($document));

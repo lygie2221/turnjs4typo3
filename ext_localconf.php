@@ -6,14 +6,14 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Te.Turnjs4typo3',
+            'Turnjs4typo3',
             'Turnjs4typo3',
             [
-                'Document' => 'list, show'
+                Te\Turnjs4typo3\Controller\DocumentController::class => 'list, show'
             ],
             // non-cacheable actions
             [
-                'Document' => ''
+                Te\Turnjs4typo3\Controller\DocumentController::class => ''
             ]
         );
 

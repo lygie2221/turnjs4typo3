@@ -3,21 +3,21 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="8e68e151-7895-4bc4-9a08-1bc0582dffb9" name="develop_gruene" url="http://gruene-kg.de">
-        <fileTransfer rootFolder="/www/develop.gruene-kg.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" host="gruene-kg.de" port="10022" sshConfigId="588b969a-70a3-4dc1-b87c-061b9ecdee3e" sshConfig="develop_gruene" keyPair="true">
+        <fileTransfer rootFolder="/www/develop.gruene-kg.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" sshConfigId="588b969a-70a3-4dc1-b87c-061b9ecdee3e" sshConfig="develop_gruene">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="913c3d6d-293c-4f35-b0b9-02edbb08243d" name="gruene_kg" url="http://gruene-kg.de">
-        <fileTransfer rootFolder="/www/2019b.gruene-kg.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" host="gruene-kg.de" port="10022" sshConfigId="31b9572c-49f9-4d03-b449-12d9042d20c0" sshConfig="gruene_kg" keyPair="true">
+        <fileTransfer rootFolder="/www/t11.gruene-kg.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" host="gruene-kg.de" port="10022" sshConfigId="31b9572c-49f9-4d03-b449-12d9042d20c0" sshConfig="gruene_kg" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="cfed929f-46bd-4eff-9c0c-b788fdd5bcd3" name="develop_lygie" url="http://gruene-kg.de">
-        <fileTransfer rootFolder="/www/dev.lygie.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" host="gruene-kg.de" port="10022" sshConfigId="588b969a-70a3-4dc1-b87c-061b9ecdee3e" sshConfig="develop_gruene" keyPair="true">
+        <fileTransfer rootFolder="/www/dev.lygie.de/htdocs/typo3conf/ext/turnjs4typo3" accessType="SFTP" sshConfigId="588b969a-70a3-4dc1-b87c-061b9ecdee3e" sshConfig="develop_gruene">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>
